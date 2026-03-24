@@ -2,30 +2,33 @@
 import Script from "next/script";
 import { useState } from "react";
 
-export default function Contact() {const [email, setEmail] = useState("");
-    const [loading, setLoading] = useState(false);
+export default function Contact() {
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState(""); // ✅ FIXED
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  setLoading(true);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
 
-  const res = await fetch("/api/subscribe", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ email }),
-  });
+    const res = await fetch("/api/subscribe", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email }),
+    });
 
-  if (res.ok) {
-    setStatus("success");
-    setEmail("");
-  } else {
-    setStatus("error");
-  }
+    if (res.ok) {
+      setStatus("success");
+      setEmail("");
+    } else {
+      setStatus("error");
+    }
 
-  setLoading(false);
-};
+    setLoading(false);
+  };
+
   return (
     <section id="contact" className="bg-[#f5f0ea] pt-6 pb-12">
       <div className="max-w-6xl mx-auto px-6 border-2 border-black p-6">
@@ -34,6 +37,7 @@ const handleSubmit = async (e) => {
         </p>
 
         <div className="grid md:grid-cols-2 gap-6 items-start">
+          
           {/* LEFT COLUMN */}
           <div>
             <h2 className="text-3xl font-bold text-black mb-3">
@@ -66,40 +70,42 @@ const handleSubmit = async (e) => {
             </p>
 
             <form onSubmit={handleSubmit}>
-  <input
-    type="email"
-    required
-    value={email}
-    onChange={(e) => setEmail(e.target.value)}
-    placeholder="Email for newsletter"
-    className="w-full p-3 mb-4 bg-[#3b4255] text-white border border-gray-500 placeholder-gray-400 outline-none"
-  />
+              <input
+                type="email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Email for newsletter"
+                className="w-full p-3 mb-4 bg-[#3b4255] text-white border border-gray-500 placeholder-gray-400 outline-none"
+              />
 
-<button
-  type="submit"
-  disabled={loading}
-  className="px-4 py-2 bg-[#9fc39a] text-black text-sm font-medium disabled:opacity-50"
->
-  {loading ? "Submitting..." : "Subscribe"}
-</button>
-</form>
+              <button
+                type="submit"
+                disabled={loading}
+                className="px-4 py-2 bg-[#9fc39a] text-black text-sm font-medium disabled:opacity-50"
+              >
+                {loading ? "Submitting..." : "Subscribe"}
+              </button>
+            </form>
 
-{status === "success" && (
-  <p className="text-green-400 mt-3 text-sm">
-    You're subscribed 🎉
-  </p>
-)}
+            {/* ✅ CLEAN STATUS MESSAGES */}
+            {status === "success" && (
+              <p className="text-green-400 mt-3 text-sm">
+                You're subscribed 🎉
+              </p>
+            )}
 
-{status === "error" && (
-  <p className="text-red-400 mt-3 text-sm">
-    Something went wrong
-  </p>
-)}
+            {status === "error" && (
+              <p className="text-red-400 mt-3 text-sm">
+                Something went wrong
+              </p>
+            )}
 
             <p className="text-xs text-gray-400 mt-4">
               Avg. read time: 4 mins • No spam
             </p>
           </div>
+
         </div>
       </div>
 

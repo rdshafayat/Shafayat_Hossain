@@ -54,10 +54,13 @@ export default function Hero() {
             I help businesses grow using data, creativity, and a global perspective.
             </p>
   
-            <button className="mt-10 px-6 py-3 border-2 border-black 
-                               shadow-[4px_4px_0px_black] bg-white text-black">
-              Contact Me
-            </button>
+            <a
+  href="#contact"
+  className="mt-10 inline-block px-6 py-3 border-2 border-black 
+             shadow-[4px_4px_0px_black] bg-white text-black"
+>
+  Contact Me
+</a>
           </div>
   
         </div>
