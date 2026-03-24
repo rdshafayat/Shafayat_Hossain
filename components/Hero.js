@@ -1,0 +1,66 @@
+export default function Hero() {
+    return (
+      <section id="home" className="bg-[#f5f0ea] min-h-screen flex items-center">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 items-center gap-12">
+  
+          {/* LEFT */}
+          <div className="relative flex justify-center items-center">
+  
+            {/* BLOB (fixed shape) */}
+            <div className="absolute w-[570px] h-[520px] bg-yellow-400 
+                            rounded-[60%_40%_50%_50%/50%_60%_40%_50%] z-0"></div>
+  
+            {/* IMAGE (bigger + proportional) */}
+            <img
+              src="/profile.png"
+              alt="profile"
+              className="w-[320px] relative z-10"
+            />
+  
+            {/* BLUE BOX */}
+            <div className="absolute top-[20px] left-[0px] z-20 
+                            bg-blue-400 px-6 py-6 border-2 border-black 
+                            shadow-[6px_6px_0px_black] text-black text-center w-[150px]">
+              <p className="text-3xl font-bold">10x</p>
+              <p className="text-sm">revenue in 18 months</p>
+            </div>
+  
+            {/* GREEN BOX */}
+            <div className="absolute bottom-[10px] left-[10px] z-20 
+                            bg-green-300 px-6 py-3 border-2 border-black 
+                            shadow-[6px_6px_0px_black] text-black flex items-center gap-2">
+              <span className="text-3xl font-bold">9+</span>
+              <span className="text-sm">Years of experiences</span>
+            </div>
+  
+            {/* YELLOW BOX */}
+            <div className="absolute right-[5px] bottom-[20px] z-20 
+                            bg-yellow-400 px-6 py-4 border-2 border-black 
+                            shadow-[6px_6px_0px_black] text-black text-center">
+              <p className="text-3xl font-bold">20+</p>
+              <p className="text-sm">enterprise positively served</p>
+            </div>
+  
+          </div>
+  
+          {/* RIGHT */}
+          <div>
+            <h1 className="text-5xl font-bold mb-6 leading-tight text-black">
+              Hi, I am <br />
+              Shafayat Hossain
+            </h1>
+  
+            <p className="text-gray-700 mb-10 text-lg">
+            I help businesses grow using data, creativity, and a global perspective.
+            </p>
+  
+            <button className="mt-10 px-6 py-3 border-2 border-black 
+                               shadow-[4px_4px_0px_black] bg-white text-black">
+              Contact Me
+            </button>
+          </div>
+  
+        </div>
+      </section>
+    );
+  }
