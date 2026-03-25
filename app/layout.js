@@ -20,6 +20,9 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${dmSans.className} font-sans`}
     >
+       <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
