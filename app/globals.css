@@ -24,7 +24,7 @@ html {
 }
 
 .border-main {
-  @apply border-main border-black;
+  @apply border border-black;
 }
 
 body {
