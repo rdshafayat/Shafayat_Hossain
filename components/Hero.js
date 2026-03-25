@@ -48,15 +48,14 @@ useEffect(() => {
 </div>
   
             {/* GREEN BOX */}
-            <div className="absolute bottom-[10px] left-[10px] z-20 
-                bg-green-300 px-3 py-2 md:px-6 md:py-3 
-                border-2 border-black 
-                shadow-[6px_6px_0px_black] text-black 
-                flex items-center gap-1 md:gap-2">
+            <div className="absolute bottom-[-20px] left-[10px] md:bottom-[10px] md:left-[10px] z-20 
+    bg-green-300 px-3 py-2 md:px-6 md:py-3 
+    border-2 border-black 
+    shadow-[6px_6px_0px_black] text-black 
+    flex items-center gap-1 md:gap-2">
   <span className="text-xl md:text-3xl font-bold">9+</span>
   <span className="text-xs md:text-sm">Years of experiences</span>
 </div>
-  
             {/* YELLOW BOX */}
             <div className="absolute right-[5px] bottom-[20px] z-20 
                 bg-yellow-400 px-3 py-2 md:px-6 md:py-4 
