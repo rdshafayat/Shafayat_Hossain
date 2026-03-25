@@ -30,9 +30,10 @@ export default function Pricing() {
     Weekly strategy sessions, channel priorities, and leadership support for your marketing manager.
   </p>
 
-  <button className="px-4 py-2 bg-black text-white text-sm">
+  <a
+  href="mailto:shafayat@shafayathossain.com" className="px-4 py-2 bg-black text-white text-sm">
     Book Advisory
-  </button>
+    </a>
 </div>
 
 {/* Card 2 (highlighted) */}
@@ -50,9 +51,10 @@ export default function Pricing() {
     Hands-on strategic leadership, team planning, campaign oversight, and executive reporting.
   </p>
 
-  <button className="px-4 py-2 border-2 border-black bg-red-400 text-white text-sm shadow-[4px_4px_0px_black]">
+  <a
+  href="mailto:shafayat@shafayathossain.com" className="px-4 py-2 border-2 border-black bg-red-400 text-white text-sm shadow-[4px_4px_0px_black]">
     Start Engagement
-  </button>
+  </a>
 </div>
 
 {/* Card 3 */}
@@ -67,9 +69,10 @@ export default function Pricing() {
     Fractional CMO plus specialist execution across paid media, content, lifecycle, and RevOps alignment.
   </p>
 
-  <button className="px-4 py-2 bg-black text-white text-sm">
+  <a
+  href="mailto:shafayat@shafayathossain.com" className="px-4 py-2 bg-black text-white text-sm">
     Request Proposal
-  </button>
+  </a>
 </div>
 
 </div>

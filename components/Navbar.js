@@ -40,7 +40,7 @@ export default function Navbar() {
 
   return (
     <nav className="border-2 border-black p-4 flex justify-between items-center bg-[#f5f0ea] sticky top-0 z-50">
-      <Link href="/" className="font-bold text-xl">
+      <Link href="/" className="font-bold text-black text-xl">
         Shafayat Hossain
       </Link>
 
