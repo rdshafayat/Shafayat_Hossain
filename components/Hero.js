@@ -1,4 +1,24 @@
+"use client";
+import { useState, useEffect } from "react";
+
 export default function Hero() {
+  const fullText = "Shafayat Hossain";
+const [text, setText] = useState("");
+
+useEffect(() => {
+  let index = 0;
+
+  const interval = setInterval(() => {
+    setText(fullText.slice(0, index + 1));
+    index++;
+
+    if (index === fullText.length) {
+      clearInterval(interval);
+    }
+  }, 40); // speed (lower = faster)
+
+  return () => clearInterval(interval);
+}, []);
     return (
       <section id="home" className="bg-[#f5f0ea] min-h-screen flex items-center">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 items-center gap-6">
@@ -51,7 +71,7 @@ export default function Hero() {
           <div>
             <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-black">
               Hi, I am <br />
-              Shafayat Hossain
+              <span>{text}</span>
             </h1>
   
             <p className="text-gray-700 mb-10 text-lg">
