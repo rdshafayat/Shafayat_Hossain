@@ -44,7 +44,7 @@ export default function Navbar() {
         Shafayat Hossain
       </Link>
 
-      <div className="flex gap-4">
+      <div className="flex flex-wrap justify-center gap-2 md:gap-4">
         <a href="#home" className={linkClass("home")}>
           Home
         </a>
