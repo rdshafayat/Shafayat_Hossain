@@ -31,7 +31,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="bg-[#f5f0ea] pt-6 pb-12">
-      <div className="max-w-6xl mx-auto px-6 border-2 border-black p-6">
+      <div className="max-w-6xl mx-auto px-6 border-main border-black p-6">
         <p className="text-xs tracking-[0.2em] text-gray-500 mb-6">
           LET&apos;S BUILD YOUR GROWTH ENGINE
         </p>
@@ -49,7 +49,7 @@ export default function Contact() {
               We&apos;ll recommend the best engagement model.
             </p>
 
-            <div className="border-2 border-black p-4 bg-[#f5f0ea]">
+            <div className="border-main border-black p-4 bg-[#f5f0ea]">
               <div
                 className="calendly-inline-widget"
                 data-url="https://calendly.com/shafayat/15min"
@@ -59,7 +59,7 @@ export default function Contact() {
           </div>
 
           {/* RIGHT COLUMN */}
-          <div className="border-2 border-black p-5 bg-[#2f3545] text-white">
+          <div className="border-main border-black p-5 bg-[#2f3545] text-white">
             <h3 className="text-2xl font-semibold mb-3">
               Get the CMO Field Notes
             </h3>
@@ -90,7 +90,7 @@ export default function Contact() {
 
             {/* ✅ CLEAN STATUS MESSAGES */}
             {status === "success" && (
-              <p className="text-green-400 mt-3 text-sm">
+              <p className="text-green-300 mt-3 text-sm">
                 You're subscribed 🎉
               </p>
             )}

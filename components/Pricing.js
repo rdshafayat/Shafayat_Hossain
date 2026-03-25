@@ -1,7 +1,7 @@
 export default function Pricing() {
     return (
       <section id="pricing" className="bg-[#f5f0ea] pt-6 pb-12">
-        <div className="max-w-6xl mx-auto px-6 border-2 border-black p-6">
+        <div className="max-w-6xl mx-auto px-6 border-main border-black p-6">
   
           {/* Label */}
           <p className="text-xs tracking-[0.2em] text-gray-500 mb-3">
@@ -21,7 +21,7 @@ export default function Pricing() {
 <div className="grid md:grid-cols-3 gap-6">
 
 {/* Card 1 */}
-<div className="border-2 border-black p-6 bg-white">
+<div className="border-main border-black p-6 bg-white">
   <h3 className="text-lg font-semibold mb-2">Sprint Advisory</h3>
 
   <p className="text-2xl font-bold mb-3">$1,200 / month</p>
@@ -37,7 +37,7 @@ export default function Pricing() {
 </div>
 
 {/* Card 2 (highlighted) */}
-<div className="border-2 border-black p-6 bg-white relative">
+<div className="border-main border-black p-6 bg-white relative">
 
   <p className="text-xs text-gray-500 mb-2">MOST SELECTED</p>
 
@@ -52,13 +52,13 @@ export default function Pricing() {
   </p>
 
   <a
-  href="mailto:shafayat@shafayathossain.com" className="px-4 py-2 border-2 border-black bg-red-400 text-white text-sm shadow-[4px_4px_0px_black]">
+  href="mailto:shafayat@shafayathossain.com" className="px-4 py-2 border-main border-black bg-red-400 text-white text-sm shadow-[4px_4px_0px_black]">
     Start Engagement
   </a>
 </div>
 
 {/* Card 3 */}
-<div className="border-2 border-black p-6 bg-white">
+<div className="border-main border-black p-6 bg-white">
   <h3 className="text-lg font-semibold mb-2">CMO + Team Pod</h3>
 
   <p className="text-2xl font-bold text-green-600 mb-3">

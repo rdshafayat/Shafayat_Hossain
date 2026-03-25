@@ -1,11 +1,11 @@
 export default function Service() {
     return (
       <section id="How It Works" className="bg-[#f5f0ea] pt-6 pb-12">
-        <div className="max-w-6xl mx-auto px-6 border-2 border-black p-6">
+        <div className="max-w-6xl mx-auto px-6 border-main border-black p-6">
   
             {/* Top header row */}
-            <div className="flex items-start justify-between mb-8">
-              <p className="text-xs tracking-[0.2em] text-grey-500">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 md:gap-0 mb-8">
+              <p className="text-xs tracking-[0.2em] text-grey-600">
                 SERVICE ARCHITECTURE
               </p>
   
@@ -17,7 +17,7 @@ export default function Service() {
 <div className="grid md:grid-cols-3 gap-6 mb-6">
 
 {/* Card 1 */}
-<div className="border-2 border-black p-5 bg-gray-100">
+<div className="border-main border-black p-5 bg-gray-100">
   <p className="text-xs text-gray-500 mb-2">
     01 / STRATEGIC POSITIONING
   </p>
@@ -32,7 +32,7 @@ export default function Service() {
 </div>
 
 {/* Card 2 */}
-<div className="border-2 border-black p-5 bg-gray-100">
+<div className="border-main border-black p-5 bg-gray-100">
   <p className="text-xs text-gray-500 mb-2">
     02 / REVENUE PROGRAM DESIGN
   </p>
@@ -47,7 +47,7 @@ export default function Service() {
 </div>
 
 {/* Card 3 (green one) */}
-<div className="border-2 border-black p-5 bg-green-200">
+<div className="border-main border-black p-5 bg-green-300">
   <p className="text-xs text-gray-600 mb-2">
     03 / EXECUTIVE OPERATING SYSTEM
   </p>
@@ -66,7 +66,7 @@ export default function Service() {
 <div className="grid md:grid-cols-3 gap-6">
 
   {/* LEFT (Red card) */}
-  <div className="border-2 border-black p-5 bg-red-400 text-white">
+  <div className="border-main border-black p-5 bg-red-400 text-white">
     <p className="text-xs mb-2 tracking-wide">
       ENGAGEMENT MODEL
     </p>
@@ -77,7 +77,7 @@ export default function Service() {
   </div>
 
   {/* RIGHT (Wide panel) */}
-  <div className="md:col-span-2 border-2 border-black">
+  <div className="md:col-span-2 border-main border-black">
 
     {/* Row 1 */}
     <div className="flex justify-between items-center px-5 py-4 border-b border-black">

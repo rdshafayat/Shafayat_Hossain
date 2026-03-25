@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-      <footer className="border-t-2 border-black bg-[#f5f0ea] px-6 py-4">
+      <footer className="border-t-main border-black bg-[#f5f0ea] px-6 py-4">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-3">
   
           {/* LEFT */}
@@ -15,7 +15,7 @@ export default function Footer() {
   <a
     href="https://www.linkedin.com/in/shafayat-h-264abbb1/"
     target="_blank"
-    className="border-2 border-black p-2 hover:bg-black hover:text-white transition"
+    className="border-main border-black p-2 hover:bg-black hover:text-white transition"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,7 @@ export default function Footer() {
   <a
     href="https://github.com/rdshafayat"
     target="_blank"
-    className="border-2 border-black p-2 hover:bg-black hover:text-white transition"
+    className="border-main border-black p-2 hover:bg-black hover:text-white transition"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"

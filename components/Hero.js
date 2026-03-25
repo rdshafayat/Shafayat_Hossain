@@ -21,7 +21,7 @@ useEffect(() => {
 }, []);
     return (
       <section id="home" className="bg-[#f5f0ea] min-h-screen flex items-center">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 items-center gap-6">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 items-center gap-10 md:gap-26">
   
           {/* LEFT */}
           <div className="relative flex justify-center items-center w-full max-w-[350px] md:max-w-none mx-auto">
@@ -38,17 +38,17 @@ useEffect(() => {
             />
   
             {/* BLUE BOX */}
-            <div className="absolute top-[10px] left-[0px] z-20 
+            <div className="absolute top-[-20px] left-[10px] z-20 
                 bg-blue-400 px-3 py-3 md:px-6 md:py-6 
                 border-2 border-black 
                 shadow-[6px_6px_0px_black] text-black text-center 
                 w-[110px] md:w-[150px]">
   <p className="text-xl md:text-3xl font-bold">10x</p>
-  <p className="text-xs md:text-sm">revenue in 18 months</p>
+  <p className="text-xs md:text-sm">revenue in 18 months (below 100k) </p>
 </div>
   
             {/* GREEN BOX */}
-            <div className="absolute bottom-[-20px] left-[10px] md:bottom-[10px] md:left-[10px] z-20 
+            <div className="absolute bottom-[0px] left-[10px] md:bottom-[10px] md:left-[10px] z-20 
     bg-green-300 px-3 py-2 md:px-6 md:py-3 
     border-2 border-black 
     shadow-[6px_6px_0px_black] text-black 
@@ -57,12 +57,12 @@ useEffect(() => {
   <span className="text-xs md:text-sm">Years of experiences</span>
 </div>
             {/* YELLOW BOX */}
-            <div className="absolute right-[5px] bottom-[20px] z-20 
+            <div className="absolute right-[-10px] bottom-[-30px] z-20 
                 bg-yellow-400 px-3 py-2 md:px-6 md:py-4 
                 border-2 border-black 
                 shadow-[6px_6px_0px_black] text-black text-center">
   <p className="text-xl md:text-3xl font-bold">20+</p>
-  <p className="text-xs md:text-sm">enterprise positively served</p>
+  <p className="text-xs md:text-sm">clients positively served</p>
 </div>
 </div>
   
@@ -79,7 +79,7 @@ useEffect(() => {
   
             <a
   href="#contact"
-  className="mt-10 inline-block px-6 py-3 border-2 border-black 
+  className="mt-10 inline-block px-6 py-3 border-main border-black 
              shadow-[4px_4px_0px_black] bg-white text-black"
 >
   Contact Me

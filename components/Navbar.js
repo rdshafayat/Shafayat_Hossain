@@ -34,12 +34,12 @@ export default function Navbar() {
   }, []);
 
   const linkClass = (id) =>
-    `px-4 py-1 border-2 border-black ${
+    `px-4 py-1 border-main border-black ${
       active === id ? "bg-yellow-400" : ""
     }`;
 
   return (
-    <nav className="border-2 border-black p-4 flex justify-between items-center bg-[#f5f0ea] sticky top-0 z-50">
+    <nav className="border-main border-black p-4 flex justify-between items-center bg-[#f5f0ea] sticky top-0 z-50">
       <Link href="/" className="font-bold text-black text-xl">
         Shafayat Hossain
       </Link>

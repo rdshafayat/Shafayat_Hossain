@@ -1,7 +1,7 @@
 export default function Team() {
     return (
       <section className="bg-[#f5f0ea] pt-6 pb-12">
-        <div className="max-w-6xl mx-auto px-6 border-2 border-black p-6">
+        <div className="max-w-6xl mx-auto px-6 border-main border-black p-6">
   
           {/* Label */}
           <p className="text-xs text-gray-600 mb-4 tracking-widest">
@@ -25,12 +25,12 @@ export default function Team() {
               {/* Stats row */}
               <div className="mt-6 grid grid-cols-2 gap-4">
   
-                <div className="border-2 border-black p-4">
+                <div className="border-main border-black p-4">
                   <p className="text-sm text-gray-600">Marketing overhead reduction</p>
                   <p className="text-xl font-bold text-black">-80%</p>
                 </div>
   
-                <div className="border-2 border-black p-4 bg-green-300">
+                <div className="border-main border-black p-4 bg-green-300">
                   <p className="text-sm text-gray-600">Pipeline efficiency lift</p>
                   <p className="text-xl font-bold text-black">+14%</p>
                 </div>
@@ -43,7 +43,7 @@ export default function Team() {
             <div className="flex flex-col gap-4">
   
               {/* Top card */}
-              <div className="border-2 border-black p-4 bg-gray-100">
+              <div className="border-main border-black p-4 bg-gray-100">
                 <h2 className="text-xs text-gray-500 mb-2">CORE TEAM</h2>
                 <h2 className="text-lg font-semibold text-black">
                   Fractional CMO · GTM Strategist · Advertising Lead · Content Director
@@ -54,12 +54,12 @@ export default function Team() {
               </div>
   
               {/* Bottom card */}
-              <div className="border-2 border-black p-4 bg-orange-300 text-black">
-                <h2 className="text-xs text-gray-500 mb-2">WORKING CADENCE</h2>
-                <p className="text-lg font-semibold">
+              <div className="border-main border-black p-4 bg-red-400 text-black">
+                <h2 className="text-xs text-white mb-2">WORKING CADENCE</h2>
+                <p className="text-lg text-white font-semibold">
                   90-DAY STRATEGY SPRINTS
                 </p>
-                <p className="text-gray-700 mb-6">Weekly executive standups, monthly board narratives, quarterly growth model resets.</p>
+                <p className="text-white mb-6">Weekly executive standups, monthly board narratives, quarterly growth model resets.</p>
               </div>
   
             </div>
